@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>MultiGuia</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/cat.css"/>
+</head>
+<script language="javaScript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="Interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>MultiGuia</h1>
+            <h2>Sua cidade em um so click!</h2>
+        </hgroup>
+
+        <img id="icone" src="_imagens/multimidia.png"/>
+       <nav id="menu">
+   <h1>Menu Principal</h1>
+<ul type="disc">
+    <li onmouseover="mudaFoto('_imagens/home.png')" ><a href="MULTIGUIA.HTML">Home</a></li>
+   <div class="dropdown">
+  <button class="dropbtn"> <li onmouseover="mudaFoto('_imagens/especificacoes.png')" >CATEGORIAS </li></button>
+  <div class="dropdown-content">
+    <a href="Hotel1.html">Hoteis</a>
+    <a href="Restaurante.html">Restaurante</a>
+    <a href="Bancos.html">Bancos</a>
+    <a href="Lazer.html">Lazer</a>
+  </div>
+</div>
+    <li onmouseover="mudaFoto('_imagens/multimidia.png')" ><a href="Cadastro.html">Login</a></li>
+     <li onmouseover="mudaFoto('_imagens/multimidia.png')" ><a href="Cadastro.html">Usuario</a></li>
+</ul>
+</nav>
+    </header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+         <header id="cabecalho-artigo">
+             <hgroup>
+                 <h3>Login> Cadastrar</h3>
+            </hgroup>
+        </header>
+
+        <fieldset id="Usuário">
+<form method="post" action="enviarlogin.php">
+
+      <legend>Login</legend>
+    <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+  
+    <input type="submit" name="tEnviar" src="_imagens/botao-enviar.png">
+</form>
+<br>
+<a href="novasenha.html">alterar senha</a>
+  </fieldset>
+
+
+<br>
+
+
+<fieldset id="Usuário">
+
+<form method="post" action="enviar.php">
+
+
+      <legend>Cadastro do Usuário</legend>
+      <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+    <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+    <p>Data de Nascimento: <input type="date" name="tData" id="cData">
+        <p><label for="cCid">Cidade:</label>
+    <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades">
+    <datalist id="cidades">
+        <option value="Capitão Poço"></option>
+        <option value="Garrafão do Norte"></option>
+        <option value="Belém"></option>
+        <option value="Nova Esperança do Piriá"></option>
+    </datalist>
+    <br>
+    <br>
+
+<input type="submit" name="tEnviar" src="_imagens/botao-enviar.png">
+</fieldset>
+
+
+  
+    </form>
+
+    <fieldset id="Excluirconta">
+<form method="post" action="apagarlogin.php">
+
+      <legend>Excluir conta</legend>
+    <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+  
+    <input type="submit" name="tEnviar" src="_imagens/botao-enviar.png">
+
+  </fieldset>
+</form>
+<br> 
+
+
+
+
+    </article>
+</section>
+    <footer id="rodape">
+        <p>Copyright&copy; 2019 - by MultiGuia <br/>
+           
+</body>
+</html>
